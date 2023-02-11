@@ -1,0 +1,5 @@
+(N)ice blue = #A0DBF2
+Cool green = #4EA68D
+Deep red = #A60505
+Light red = #D93B3B
+Off-white = #F2F2F2
