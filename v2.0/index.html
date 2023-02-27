@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>// complex robot \\\\</title>
+        <!-- Favicon stuff start-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="manifest" href="./site.webmanifest">
+        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Favicon stuff end -->
+        <!-- Begin font loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+        <!-- End font loading -->
+        <!-- Bootstrap and custom CSS loadup -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <link href="./index.css" rel="stylesheet">
+    </head>
+    <body onLoad="footerDate(); setElementColors();">
+
+        <script src="./index.js"></script>
+
+        <!-- Nav begin -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./512x512_cr2.jpg" alt="cr." width="30" height="30">
+                </a> <!--- Was "cr." -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title manrope" id="offcanvasNavbarLabel">complex robot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div id="offCanvasBody" class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active manrope" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link manrope" href="#">Specialties</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link manrope" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link manrope" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link manrope" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav end -->
+
+        <!-- Header and such -->
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <p>&nbsp;</p><p>&nbsp;</p> <!-- This is a bit of a hack job since off-canvas nav doesn't block!! -->
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col text-center">
+                    <h1 class="headerrev"><span class="manrope">Beautiful, responsive design need not be</span><span class="glitch"> complex</span>.</h1>
+                    <script>ScrollReveal().reveal('.headerrev', {delay: 200, duration: 2000});</script>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center"></div>
+                <div class="col text-center">
+                    <img src="./bots.jpg" class="img-fluid roborev" alt="bots">
+                    <script>ScrollReveal().reveal('.roborev', {delay: 200, duration: 2000});</script>
+                </div>
+            </div>
+        </div>
+        <!-- End Header and such -->
+
+        <footer class="text-center fw-bold">
+            <p class="footer">Copyright <span id="footDate"></span> complex robot - All rights reserved.</p>
+            <p class="footer">Built with ❤️ by 🤖</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>
