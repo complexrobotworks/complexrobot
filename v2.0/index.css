@@ -20,12 +20,22 @@
 }
 /* End debugging styles */
 
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
 footer {
     font-size: 14px;
 }
 
 p.footer {
     margin-bottom: 0px;
+}
+
+.headbump {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Font classes */

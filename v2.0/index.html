@@ -23,6 +23,7 @@
         <!-- End font loading -->
         <!-- Bootstrap and custom CSS loadup -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         <link href="./index.css" rel="stylesheet">
     </head>
@@ -50,16 +51,16 @@
                         <a class="nav-link active manrope" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
+                        <a class="nav-link manrope" href="#helpdiv">About</a>
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link manrope" href="#">Specialties</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link manrope" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link manrope" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link manrope" href="#">Contact Us</a>
+                        <a class="nav-link manrope" href="#">Contact</a>
                         </li>
                     </ul>
                     </div>
@@ -88,11 +89,173 @@
         </div>
         <!-- End Header and such -->
 
+        <!-- Attempting to put help and specialties side by side. Prayers plz.-->
+        <div id="helpdiv" class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="helpdiv">Let complex robot help you.</h3>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <p class="helpdiv">
+                        Formally launched in the summer of 2022 (but decades in the making) complex robot is the brain dump of me - Matt Nemeth. Based out of Spring Hill, FL, I've been
+                        involved in web design and related art activities since the mid 1990's.
+                    </p>
+                    <p class="helpdiv">
+                        Fast forward many years, relearning old technology, learning new technology, I've rediscovered my love for all things web and design. There's many avenues to reaching
+                        clients on the Internet now between social media, messaging boards, job sites - but I maintain a solid, beautiful web presence is still important for that extra level
+                        of professionalism and sheen. Let me help you down this path!
+                    </p>
+                    <script>ScrollReveal().reveal('.helpdiv', {delay: 200, duration: 2000});</script>
+                </div>
+            </div>
+            <div id="specialties" class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="text-center headbump">// specializing in \\\\</h1>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./smallbiz_f.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption"> <!-- d-none d-md-block -->
+                                <h5>Small Business</h5>
+                                <p>Get your digital presence up and running!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./band_f.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Band</h5>
+                                <p>Build a landing spot for your music!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./portfolio_f.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Portfolio</h5>
+                                <p>Set up a gorgeous, responsive portfolio!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./logoalbum_f.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Logos / Album Art</h5>
+                                <p>Create a memorable logo! Commission your music art!</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin. -->
+
+        <!-- Begin portfolio section -->
+        <div id="portfolio" class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <h1 class="text-center headbump">// the robotfolio \\\\</h1>
+            </div>
+            <!-- Web block -->
+            <div id="webport" class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="headbump">Web: <span class="fs-6">(press/click to enter)</span></h2>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <a href="http://iammane.link"><img src="./robotfolio/port-iammane.png" class="img-fluid" alt="iammane dot link site"></a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <a href="http://montaukpm.com"><img src="./robotfolio/port-mpm.jpg" class="img-fluid" alt="montauk property management site"></a>
+                </div>
+            </div>
+            <!-- End web block-->
+            <!-- Artwork for music block -->
+            <div id="artport" class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="headbump">Artwork for Music:</h2>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/iammane-rfyh.jpg" class="img-fluid" alt="iammane reaching for your heart cover">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/ics-ihto.jpg" class="img-fluid" alt="ics i hear the ocean cover">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/ics-wftt.jpg" class="img-fluid" alt="ics waiting for the thaw cover">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/iammane-lmns.jpg" class="img-fluid" alt="iammane lmns cover">
+                </div>
+            </div>
+            <!-- End artwork for music block -->
+            
+            <!-- Logo block -->
+            <div id="logoport" class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="headbump">Logos:</h2>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/antihelixlogo.png" class="img-fluid" alt="antihelix logo">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/icslogo.png" class="img-fluid" alt="ics logo">
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/oslogo.jpg" class="img-fluid" alt="os logo">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="./robotfolio/osshell-logo.jpg" class="img-fluid" alt="os shell logo">
+                </div>
+            </div>
+        </div>
+        <!-- End portfolio section -->
+
+        <div id="helpnotlimit" class="container-fluid">
+            <div class="row align-items-center justify-content-center">
+                <div class="col text-center">
+                    <h3 class="headbump">
+                        <p>complex robot is not limited to the above only - interested? <a href="./contact.html"><button type="button" class="btn btn-outline-success">Contact us!</button></a></p>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
         <footer class="text-center fw-bold">
             <p class="footer">Copyright <span id="footDate"></span> complex robot - All rights reserved.</p>
             <p class="footer">Built with ❤️ by 🤖</p>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!--
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-messenger"></i> =====> Need these for later
+        -->
     </body>
 </html>
