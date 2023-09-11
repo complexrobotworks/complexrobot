@@ -21,7 +21,7 @@
 /* End debugging styles */
 
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
 }
 
@@ -39,10 +39,9 @@ p.footer {
 }
 
 /* Font classes */
-.manrope {
-    font-family: 'Manrope', sans-serif;
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
 }
-
 .glitch {
     font-family: 'Rubik Glitch', cursive;
 }
