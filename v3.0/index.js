@@ -1,20 +1,23 @@
 const colTheme = [
     {
-        bg: '#ACDFFA'
+        logo: './roboblue.jpg',
+        bg: '#122140',
+        hs: '#F2522E'
     },
     {
-        bg: '#FFB501'
+        logo: './robogreen.jpg',
+        bg: '#63D08D',
+        hs: '#F23E2E'
     },
     {
-        bg: '#FFAFA7'
-    },
-    {
-        bg: '#BCD089'
+        logo: './robored.jpg',
+        bg: '#B13F56',
+        hs: '#F2AF5C'
     }
 ];
 
 function colSel() {
-    return Math.floor(Math.random() * 4);
+    return Math.floor(Math.random() * 3);
 }
 
 function footerDate() {
@@ -23,9 +26,24 @@ function footerDate() {
 
 function setElementColors() {
     let rnd = colSel();
-    document.getElementById('offCanvasBody').style.backgroundColor = colTheme[rnd].bg;
-    document.getElementById('specialties').style.backgroundColor = colTheme[rnd].bg;
-    document.getElementById('webport').style.backgroundColor = colTheme[rnd].bg;
-    document.getElementById('artport').style.backgroundColor = colTheme[rnd].bg;
-    document.getElementById('logoport').style.backgroundColor = colTheme[rnd].bg;
+    if (rnd == 0) {
+        document.getElementById('botlogo').innerHTML = "<img src='./roboblue.jpg' class='img-fluid' alt='bots'>";
+    };
+    if (rnd == 1) {
+        document.getElementById('botlogo').innerHTML = "<img src='./robogreen.jpg' class='img-fluid' alt='bots'>";
+    };
+    if (rnd == 2) {
+        document.getElementById('botlogo').innerHTML = "<img src='./robored.jpg' class='img-fluid' alt='bots'>";
+    };
+
+    document.body.style.backgroundColor = colTheme[rnd].bg;
+    
+
+
+
+    // document.getElementById('offCanvasBody').style.backgroundColor = colTheme[rnd].bg;
+    // document.getElementById('specialties').style.backgroundColor = colTheme[rnd].bg;
+    // document.getElementById('webport').style.backgroundColor = colTheme[rnd].bg;
+    // document.getElementById('artport').style.backgroundColor = colTheme[rnd].bg;
+    // document.getElementById('logoport').style.backgroundColor = colTheme[rnd].bg;
 };
