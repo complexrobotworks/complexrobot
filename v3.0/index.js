@@ -2,17 +2,20 @@ const colTheme = [
     {
         logo: './roboblue.jpg',
         bg: '#122140',
-        hs: '#F2522E'
+        hs: '#F2522E',
+        txt: '#05DBF2'
     },
     {
         logo: './robogreen.jpg',
         bg: '#63D08D',
-        hs: '#F23E2E'
+        hs: '#F23E2E',
+        txt: '#FFFFFF'
     },
     {
         logo: './robored.jpg',
         bg: '#B13F56',
-        hs: '#F2AF5C'
+        hs: '#F2AF5C',
+        txt: '#F28444'
     }
 ];
 
@@ -37,13 +40,14 @@ function setElementColors() {
     };
 
     document.body.style.backgroundColor = colTheme[rnd].bg;
-    
 
+    const hElements = document.querySelectorAll('h1, h2, h3');
+    hElements.forEach((h) => {
+        h.style.color = colTheme[rnd].hs;
+    });
 
-
-    // document.getElementById('offCanvasBody').style.backgroundColor = colTheme[rnd].bg;
-    // document.getElementById('specialties').style.backgroundColor = colTheme[rnd].bg;
-    // document.getElementById('webport').style.backgroundColor = colTheme[rnd].bg;
-    // document.getElementById('artport').style.backgroundColor = colTheme[rnd].bg;
-    // document.getElementById('logoport').style.backgroundColor = colTheme[rnd].bg;
+    const pElements = document.querySelectorAll('p');
+    pElements.forEach((p) => {
+        p.style.color = colTheme[rnd].txt;
+    });
 };

@@ -38,6 +38,10 @@ p.footer {
     margin-bottom: 20px;
 }
 
+.caroutext {
+    color: #FFFFFF;
+}
+
 /* Font classes */
 .quicksand {
     font-family: 'Quicksand', sans-serif;
