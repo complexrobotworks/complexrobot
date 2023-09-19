@@ -3,19 +3,22 @@ const colTheme = [
         logo: './roboblue.jpg',
         bg: '#122140',
         hs: '#F2522E',
-        txt: '#05DBF2'
+        txt: '#05DBF2',
+        ahref: '#05DBF2'
     },
     {
         logo: './robogreen.jpg',
         bg: '#63D08D',
         hs: '#F23E2E',
-        txt: '#FFFFFF'
+        txt: '#FFFFFF',
+        ahref: '#F28444'
     },
     {
         logo: './robored.jpg',
         bg: '#B13F56',
         hs: '#F2AF5C',
-        txt: '#F28444'
+        txt: '#F28444',
+        ahref: '#F28444'
     }
 ];
 
@@ -49,5 +52,10 @@ function setElementColors() {
     const pElements = document.querySelectorAll('p');
     pElements.forEach((p) => {
         p.style.color = colTheme[rnd].txt;
+    });
+
+    const aHrefz = document.querySelectorAll('a');
+    aHrefz.forEach((a) => {
+        a.style.color = colTheme[rnd].ahref;
     });
 };
