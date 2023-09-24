@@ -38,10 +38,10 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">About</a>
-                  <a class="nav-link" href="#">Specialties</a>
-                  <a class="nav-link" href="#">Portfolio</a>
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link active" aria-current="page" href="#helpdiv"><span style="color: black;">About</span></a>
+                  <a class="nav-link" href="#specialties"><span style="color: black;">Specialties</span></a>
+                  <a class="nav-link" href="#portfolio"><span style="color: black;">Portfolio</span></a>
+                  <a class="nav-link" href="#helpnotlimit"><span style="color: black;">Contact</span></a>
                   <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
                 </div>
               </div>
@@ -244,6 +244,40 @@
                     </h3>
                 </div>
             </div>
+
+            <!-- Dan form injection -->
+
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6 border rounded">
+                    <form id="complexform" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="c91f664a-cdae-413a-8093-7e54ae4b6707">
+                        <input type="hidden" name="subject" value="Form submission from complexrobot.net">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"><p>Name</p></label>
+                            <input type="text" name="name" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"><p>Email address</p></label>
+                            <input type="email" name="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"><p>Phone number</p></label>
+                            <input type="tel" name="telephone" class="form-control" placeholder="(123)456-7890">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label"><p>Your message</p></label>
+                            <textarea class="form-control" name="message" rows="3" placeholder="Enter your message here!"></textarea>
+                        </div>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <button type="submit" class="btn btn-danger" style="margin-bottom: 10px;">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End dan form injection -->
+
+
+
         </div>
 
         <footer class="text-center fw-bold">
