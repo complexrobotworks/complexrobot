@@ -21,8 +21,10 @@
 /* End debugging styles */
 
 body {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 footer {
