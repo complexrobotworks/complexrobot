@@ -21,11 +21,14 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
       <!-- Google Font end -->
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Bootstrap load -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <!-- bootstrap icons?? -->
+      <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> <!-- Scroll Reveal library -->
       <link rel="stylesheet" href="./index.css">
     </head>
     <body>
@@ -34,16 +37,15 @@
         <![endif]-->
         
         <!-- Navbar start -->
-        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary frostmenu">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="./512x512_cr2.jpg" alt="cr." width="30" height="30"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link" href="#about">About</a>
                   <a class="nav-link" href="#">Services</a>
                 </div>
               </div>
@@ -53,47 +55,26 @@
 
         <!-- Buffer --><p>&nbsp;</p><p>&nbsp;</p><!-- Buffer fin. -->
 
+        <div class="container-fluid" id="home">
+          <div class="row justify-content-center">
+            <div class="col-md-3">
+              <img src="512x512_cr2.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <p class="fs-1">complex robot</p>
+            <p class="fs-1 fst-italic satisfy-regular titlerev">works</p>
+            <script>ScrollReveal().reveal('.titlerev', {delay: 0, duration: 6000});</script>
+          </div>
+        </div>
 
-        <p>first</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        <p>doot</p>
-        
-
-
-
-
+        <div class="container-fluid" id="about">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6 bordred">
+              testes.
+            </div>
+          </div>
+        </div>
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

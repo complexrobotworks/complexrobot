@@ -35,10 +35,16 @@ p.footer {
     margin-bottom: 0px;
 }
 
+.frostmenu {
+    opacity: 0.5;
+}
+
 /* Font classes */
 
-/* End font classes */
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-.navbar {
-    margin: 0 auto;
-}
+/* End font classes */
