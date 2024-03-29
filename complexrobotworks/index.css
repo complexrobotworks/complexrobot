@@ -57,6 +57,15 @@ hr {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.crbuffer {
+    padding-top: 300px;
+}
+
+.worksbuffer {
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
 img {
     padding-bottom: 15px;
 }
