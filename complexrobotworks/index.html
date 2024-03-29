@@ -82,11 +82,11 @@
         <div class="container-fluid">
           <div class="row justify-content-center text-center">
             <div class="col-md-6">
-              <p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="abouttext fs-2">Technology solutions don't need to be <span style="font-style: italic;">complex.</span></p>
+              <p class="abouttext fs-5">
+                Let complex robot be your partner! Serving small and medium sized business since 2022, complex robot
+                will help you work as securely and efficiently as possible.
+              </p>
               <script>ScrollReveal().reveal('.abouttext', {delay: 0, duration: 4000});</script>
             </div>
           </div>
@@ -112,9 +112,9 @@
                 <i class="glyphtext bi bi-shield-lock"></i>
               </div>
               <div class="col-md-3">
-                <p>Cyber security</p>
-                <p>blah blah blah</p>
-                <p>Assessment, pentest, reviews</p>
+                <p>Cybersecurity services</p>
+                <p>Web application pen testing</p>
+                <p>Security posture assessment</p>
               </div>
             </div>
             <script>ScrollReveal().reveal('.secserv', {delay: 0, duration: 4000});</script>
@@ -137,7 +137,7 @@
               <div class="col-md-3">
                 <p>Self hosted web</p>
                 <p>Web design, logos, art needs</p>
-                <p>Third party platforms</p>
+                <p>Third party platforms (Squarespace, Wix etc)</p>
               </div>
             </div>
             <script>ScrollReveal().reveal('.designserv', {delay: 0, duration: 4000});</script>
@@ -158,8 +158,8 @@
                 <i class="glyphtext bi bi-cpu"></i>
               </div>
               <div class="col-md-3">
-                <p>Small/medium business tech needs</p>
-                <p></p>
+                <p>General small/medium business tech needs</p>
+                <p>Technology solutions to decrease operational friction</p>
               </div>
             </div>
             <script>ScrollReveal().reveal('.techserv', {delay: 0, duration: 4000});</script>
@@ -178,37 +178,50 @@
         </div>
         <!-- Contact art end-->
 
+        <!-- Contact form header -->
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+              <div class="col text-center">
+                  <p class="fs-5">complex robot is not limited to the above only - interested? <a class="footer" href="mailto:complexrobotworks@gmail.com">Contact us!</a></p>
+                  <p class="fs-5">Follow complex robot on <a class="footer" href="https://www.facebook.com/complexrobot"><i class="bi bi-facebook"></i></a>
+                          or chat on  <a class="footer" href="https://m.me/complexrobot"><i class="bi bi-messenger"></i></a></p>
+              </div>
+          </div>
+        </div>
+
         <!-- Form injection -->
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-6 border rounded">
-              <form id="complexform" action="https://api.web3forms.com/submit" method="POST">
-                  <input type="hidden" name="access_key" value="c91f664a-cdae-413a-8093-7e54ae4b6707">
-                  <input type="hidden" name="subject" value="Form submission from complexrobot.net">
-                  <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"><p class="fw-bold">Name</p></label>
-                      <input type="text" name="name" class="form-control" placeholder="Your name">
-                  </div>
-                  <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"><p class="fw-bold">Email address</p></label>
-                      <input type="email" name="email" class="form-control" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"><p class="fw-bold">Phone number</p></label>
-                      <input type="tel" name="telephone" class="form-control" placeholder="(123)456-7890">
-                  </div>
-                  <div class="mb-3">
-                      <label for="exampleFormControlTextarea1" class="form-label"><p class="fw-bold">Your message</p></label>
-                      <textarea class="form-control" name="message" rows="3" placeholder="Enter your message here!"></textarea>
-                  </div>
-                  <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                  <button type="submit" class="btn btn-info" style="margin-bottom: 10px; color: white;">Submit</button>
-              </form>
+        <div class="container-fluid">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-6 border rounded">
+                <form id="complexform" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="c91f664a-cdae-413a-8093-7e54ae4b6707">
+                    <input type="hidden" name="subject" value="Form submission from complexrobot.net">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"><p class="fw-bold">Name</p></label>
+                        <input type="text" name="name" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"><p class="fw-bold">Email address</p></label>
+                        <input type="email" name="email" class="form-control" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"><p class="fw-bold">Phone number</p></label>
+                        <input type="tel" name="telephone" class="form-control" placeholder="(123)456-7890">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"><p class="fw-bold">Your message</p></label>
+                        <textarea class="form-control" name="message" rows="3" placeholder="Enter your message here!"></textarea>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit" class="btn btn-info" style="margin-bottom: 10px; color: white;">Submit</button>
+                </form>
+            </div>
           </div>
         </div>
         <!-- End form injection -->
 
-        <footer class="text-center fw-bold">
+        <footer class="text-center">
         <p class="footer">Copyright 2022-<span id="footDate"></span> complex robot - All rights reserved.</p>
         <p class="footer">Built with ❤️ by 🤖</p>
         </footer>

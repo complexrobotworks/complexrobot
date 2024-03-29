@@ -26,9 +26,8 @@ body {
     font-weight: 300;
     font-style: normal;
 }
-
-footer {
-    font-size: 14px;
+a.footer {
+    color: #0DCAF0;
 }
 
 p.footer {
