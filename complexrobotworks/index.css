@@ -28,6 +28,7 @@ body {
 }
 a.footer {
     color: #0DCAF0;
+    text-decoration: none;
 }
 
 p.footer {
